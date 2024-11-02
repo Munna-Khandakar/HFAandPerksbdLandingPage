@@ -1,3 +1,4 @@
+import {ReactNode} from 'react';
 import { Sen } from "next/font/google";
 import "./globals.css";
 
@@ -19,7 +20,7 @@ export const metadata = {
   description: "HFA and Perks Bd Co. Ltd",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({children}: Readonly<{ children: ReactNode; }>) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={Josef.className}>
