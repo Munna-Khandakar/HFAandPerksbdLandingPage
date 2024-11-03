@@ -1,5 +1,4 @@
-"use client"; // Add this line to specify this as a client component
-
+"use client";
 import React, { useState } from "react";
 import "../globals.css";
 
