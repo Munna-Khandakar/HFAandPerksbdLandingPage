@@ -4,13 +4,8 @@ import Image from "next/image";
 
 const Logo = () => {
     return (
-        <Link href='/'>
-            <Image 
-            src={logo}
-            width={160}
-            height={55}
-            alt=""
-            />
+        <Link href='/' className="border-0 md:border -ml-2 px-2 py-1 hover:border-primary hover:text-primary">
+            <span className="font-normal md:font-bold text-sm md:text-xl">HFA and Perks Bd Co. Ltd</span>
         </Link>
     )
 }

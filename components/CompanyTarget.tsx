@@ -39,12 +39,10 @@ const CompanyTarget = () => {
             </div>
             <div className='items-center lg:flex gap-x-8'>
                 {/*Left Image Section */}
-                <motion.div
-                    style={{scale}}
-                    ref={ref}
+                <div
                     className='w-full'>
-                    <Image src="/image/gallery1123.jpg" width={700} height={700} alt={''}/>
-                </motion.div>
+                    <Image src="/image/target.avif" width={700} height={700} alt={''}/>
+                </div>
 
                 {/*Right Content Section */}
                 <motion.div
@@ -115,7 +113,7 @@ const CompanyTarget = () => {
                     style={{scale}}
                     ref={ref}
                     className='w-full'>
-                    <Image src="/image/gallery1123.jpg" width={700} height={700} alt={''}/>
+                    <Image src="/image/target2.jpg" width={700} height={700} alt={''}/>
                 </motion.div>
             </div>
             <div className='pt-4'>

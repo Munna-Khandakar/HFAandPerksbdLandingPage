@@ -40,12 +40,10 @@ const CompanyBackground = () => {
             </div>
             <div className='items-center lg:flex gap-x-8'>
                 {/*Left Image Section */}
-                <motion.div
-                    style={{scale}}
-                    ref={ref}
+                <div
                     className='w-full'>
-                    <Image src="/image/gallery1123.jpg" width={700} height={700} alt={'company'}/>
-                </motion.div>
+                    <Image src="/image/11.jpg" width={700} height={700} alt={'company'}/>
+                </div>
 
                 {/*Right Content Section */}
                 <motion.div
@@ -126,7 +124,7 @@ const CompanyBackground = () => {
                     style={{scale}}
                     ref={ref}
                     className='w-full'>
-                    <Image src="/image/gallery1123.jpg" width={700} height={700} alt={'company background'}/>
+                    <Image src="/image/12.jpg" width={700} height={700} alt={'company background'}/>
                 </motion.div>
             </div>
             <div className='pt-4'>

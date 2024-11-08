@@ -91,7 +91,7 @@ const ContactSection: React.FC = () => {
 
                         <div className="space-y-6">
                             {/* Office Information Sections */}
-                            <div className="p-6 bg-white dark:bg-gray-700 shadow-md rounded-lg">
+                            <div className="p-6 bg-white dark:bg-gray-700 shadow-md rounded-lg fade-in-up">
                                 <h4 className="text-lg font-medium mb-2 dark:text-gray-100">
                                     Dhaka Office
                                 </h4>
@@ -99,7 +99,7 @@ const ContactSection: React.FC = () => {
                                     <span className="font-semibold">Address:</span> Plot # 09, Road # 501, Sector # 7, Jolshiri Abashon, Rupganj, Narayanganj 1460
                                 </p>
                             </div>
-                            <div className="p-6 bg-white dark:bg-gray-700 shadow-md rounded-lg">
+                            <div className="p-6 bg-white dark:bg-gray-700 shadow-md rounded-lg fade-in-up">
                                 <h4 className="text-lg font-medium mb-2 dark:text-gray-100">
                                     Corporate Office
                                 </h4>
@@ -110,7 +110,7 @@ const ContactSection: React.FC = () => {
                                     <span className="font-semibold">Email:</span> arshad@perksbd.com
                                 </p>
                             </div>
-                            <div className="p-6 bg-white dark:bg-gray-700 shadow-md rounded-lg">
+                            <div className="p-6 bg-white dark:bg-gray-700 shadow-md rounded-lg fade-in-up">
                                 <h4 className="text-lg font-medium mb-2 dark:text-gray-100">
                                     Japan Office
                                 </h4>

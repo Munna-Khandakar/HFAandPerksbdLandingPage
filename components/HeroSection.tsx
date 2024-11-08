@@ -8,9 +8,9 @@ import {motion} from "framer-motion";
 
 const HeroSection = () => {
     return (
-        <div className='container py-12 xl:py-24 h-[auto] text-center lg:py-0 lg:text-left lg:flex lg:justify-between'>
+        <div className='container py-12 xl:py-24 h-[auto] text-center lg:py-0 lg:text-left lg:flex gap-2 lg:justify-between'>
             {/* Left Section */}
-            <div className='lg:w-1/2 xl:py-14 lg:py-8'>
+            <div className='flex-1 xl:py-14 lg:py-8'>
                 <motion.p
                     initial="offscreen"
                     whileInView={"onscreen"}
@@ -53,13 +53,13 @@ const HeroSection = () => {
             </div>
 
             {/* Right Image Section */}
-            <div className='w-1/2'>
+            <div className='flex-1'>
                 <Image
-                    src="/image/hall.png"
+                    src="/image/11.jpg"
                     width={800}
                     height={500}
                     alt=""
-                    className="absolute right-20 xl:h-[448px] xl:w-[600px] lg:h-[344px] lg:w-[500px] hidden lg:block"
+                    className="clipped-corners right-20 xl:h-[448px] xl:w-[600px] lg:h-[344px] lg:w-[500px] hidden lg:block"
                 />
             </div>
         </div>

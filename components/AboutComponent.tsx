@@ -14,11 +14,11 @@ const AboutComponent = () => {
                     variants={titleVariants}
                 >
                     <Image
-                        src="/image/aboutfront.png"
+                        src="/image/13.jpg"
                         width={900}
                         height={500}
                         alt="About"
-                        className="max-md:hidden"
+                        className="max-md:hidden clipped-corners"
                     />
                 </motion.div>
 
