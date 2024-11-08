@@ -79,6 +79,7 @@ export default function CatalogSwiperSection() {
                         width={520}
                         height={220}
                         className="w-full h-[220px] object-fit"
+                        unoptimized={true}
                     />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -88,6 +89,7 @@ export default function CatalogSwiperSection() {
                         width={520}
                         height={220}
                         className="w-full h-[220px] object-fit"
+                        unoptimized={true}
                     />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -97,6 +99,7 @@ export default function CatalogSwiperSection() {
                         width={520}
                         height={220}
                         className="w-full h-[220px] object-fit"
+                        unoptimized={true}
                     />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -106,6 +109,7 @@ export default function CatalogSwiperSection() {
                         width={520}
                         height={220}
                         className="w-full h-[220px] object-fit"
+                        unoptimized={true}
                     />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -115,6 +119,7 @@ export default function CatalogSwiperSection() {
                         width={520}
                         height={220}
                         className="w-full h-[220px] object-fit"
+                        unoptimized={true}
                     />
                 </SwiperSlide>
             </Swiper>

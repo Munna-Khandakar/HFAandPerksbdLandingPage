@@ -59,6 +59,7 @@ const HeroSection = () => {
                     width={800}
                     height={500}
                     alt=""
+                    unoptimized={true}
                     className="clipped-corners right-20 xl:h-[448px] xl:w-[600px] lg:h-[344px] lg:w-[500px] hidden lg:block"
                 />
             </div>
