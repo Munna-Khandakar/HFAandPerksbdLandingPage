@@ -8,7 +8,7 @@ export default function CatalogueSection() {
             //Perks Auto
             catagory: "PERKS AUTO",
             title: "Perks Auto",
-            image: "/image/badroom.jpg",
+            image: "/image/11.jpg",
             description: "Driving Your Dreams",
         },
         {
@@ -16,7 +16,7 @@ export default function CatalogueSection() {
             //Perks Tex
             catagory: "PERKS TEX",
             title: "Perks Tex",
-            image: "/image/kitchen1.jpg",
+            image: "/image/13.jpg",
             description: "Passionate About Fashion",
         },
         {
@@ -24,7 +24,7 @@ export default function CatalogueSection() {
             //Perks Solutions
             catagory: "PERKS SOLUTIONS",
             title: "Perks Solutions",
-            image: "/image/drowing.jpg",
+            image: "/image/4.jpg",
             description: "Bridging Boundaries, Building Success",
         },
         {
@@ -32,7 +32,7 @@ export default function CatalogueSection() {
             // Perks Agro
             catagory: "PERKS AGRO",
             title: "Perks Agro",
-            image: "/image/living.jpg",
+            image: "/image/12.jpg",
             description: "Cultivating Excellence",
         },
         {
@@ -40,7 +40,7 @@ export default function CatalogueSection() {
             // Perks Charity
             catagory: "PERKS CHARITY",
             title: "Perks Charity",
-            image: "/image/kitchen1.jpg",
+            image: "/image/8.jpg",
             description: "Changing Lives Together",
         }
     ]
@@ -58,7 +58,7 @@ export default function CatalogueSection() {
                             width={380}
                             height={100}
                             alt=""
-                            className="w-full"
+                            className="w-full border h-[400px]"
                             />
                         </div>
 
@@ -69,7 +69,7 @@ export default function CatalogueSection() {
                             </div>
                             <a className="block text-xl font-semibold" href="">{item.title}</a>
                             <p className="py-4">{item.description}</p>
-                            <a className="inline-flex items-center font-medium" href="">See Details <TbArrowNarrowRight className="ml-2" /> </a>
+                            <a className="inline-flex items-center font-medium" href="/services">See Details <TbArrowNarrowRight className="ml-2" /> </a>
                         </div>
 
                         <div className="inset-0 bg-tertiary flex-col items-center justify-end md:flex md:absolute gap-32 pb-16 text-xl transition duration-300 ease-in-out border-b-2 group-hover:translate-y-full md:border-b-0 hidden">

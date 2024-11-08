@@ -74,47 +74,47 @@ export default function CatalogSwiperSection() {
             >
                 <SwiperSlide>
                     <Image
-                        src="/image/swiper1.jpg"
+                        src="/image/1.jpg"
                         alt="Swiper"
                         width={520}
                         height={220}
-                        className="w-full"
+                        className="w-full h-[220px] object-fit"
                     />
                 </SwiperSlide>
                 <SwiperSlide>
                     <Image
-                        src="/image/swiper2.jpg"
+                        src="/image/2.jpg"
                         alt="Swiper"
                         width={520}
                         height={220}
-                        className="w-full"
+                        className="w-full h-[220px] object-fit"
                     />
                 </SwiperSlide>
                 <SwiperSlide>
                     <Image
-                        src="/image/swiper3.jpg"
+                        src="/image/3.jpg"
                         alt="Swiper"
                         width={520}
                         height={220}
-                        className="w-full"
+                        className="w-full h-[220px] object-fit"
                     />
                 </SwiperSlide>
                 <SwiperSlide>
                     <Image
-                        src="/image/swiper4.jpg"
+                        src="/image/4.jpg"
                         alt="Swiper"
                         width={520}
                         height={220}
-                        className="w-full"
+                        className="w-full h-[220px] object-fit"
                     />
                 </SwiperSlide>
                 <SwiperSlide>
                     <Image
-                        src="/image/swiper5.jpg"
+                        src="/image/5.jpg"
                         alt="Swiper"
                         width={520}
                         height={220}
-                        className="w-full"
+                        className="w-full h-[220px] object-fit"
                     />
                 </SwiperSlide>
             </Swiper>
