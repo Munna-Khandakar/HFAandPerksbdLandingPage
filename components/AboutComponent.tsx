@@ -56,10 +56,11 @@ const AboutComponent = () => {
                         whileInView={"onscreen"}
                         variants={tagVariants}
                         className="px-12 pb-4">
-                        At HFA Perks BD, we are dedicated to establishing and achieving
-                        ambitious goals that reflect our mission and vision. These targets
-                        guide our collaborative efforts across all our businesses and
-                        initiatives. Our Services include:
+                        At HFA & Perks BD, our vision is to pioneer a path to a sustainable,
+                        inclusive, and thriving future for all. Our vision encapsulates our
+                        aspirations, guiding our actions, and inspiring our commitment to
+                        excellence in every endeavor.
+                        Our Services include:
                     </motion.p>
                 </div>
             </div>

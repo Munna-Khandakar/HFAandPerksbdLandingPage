@@ -24,7 +24,7 @@ const HeroSection = () => {
                     whileInView={"onscreen"}
                     variants={desVariants}
                     className='h1'>
-                    Be with PERKS and <br/>avail the perks
+                    Welcome to<br/>HFA and PerksBD
                 </motion.h1>
 
                 <motion.p
@@ -32,7 +32,7 @@ const HeroSection = () => {
                     whileInView={"onscreen"}
                     variants={tagVariants}
                     className='pb-6 text-muted-foreground text-justify xl:pb-10'>
-                    Welcome to HFA and PerksBD, a conglomerate of companies
+                    A conglomerate of companies
                     dedicated to excellence and making a positive impact in various
                     domains. We are driven by a shared commitment to quality,
                     sustainability, and social responsibility. Our group comprises Perks
