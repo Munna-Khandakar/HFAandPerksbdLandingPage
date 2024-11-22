@@ -32,7 +32,7 @@ export default function CatalogueSection() {
                         </div>
 
                         <div className="inset-0 bg-tertiary flex-col items-center justify-end md:flex md:absolute gap-32 pb-4 transition duration-300 ease-in-out border-b-2 group-hover:translate-y-full md:border-b-0 hidden">
-                                <p className="tracking-wider border -rotate-90 text-sm text-start">{item.name}</p>
+                                <p className="tracking-wider -rotate-90 text-sm text-start">{item.name}</p>
                                 <span className="pt-4">{item.id}</span>
                         </div>
                     </div>
