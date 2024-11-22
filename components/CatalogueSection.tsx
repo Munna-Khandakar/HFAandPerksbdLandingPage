@@ -5,7 +5,7 @@ import {ServiceData} from "@/data/ServiceData";
 export default function CatalogueSection() {
 
     return (
-        <div className="grid gap-8 lg:grid-cols-4 grid-cols-2 lg:gap-0 divide-gray-300 lg:divide-x">
+        <div className="grid gap-8 md:grid-cols-4 grid-cols-1 lg:gap-0 divide-gray-300 lg:divide-x">
             {
                 ServiceData.map((item) => (
                     <div key={item.id}
@@ -27,7 +27,7 @@ export default function CatalogueSection() {
                                 <span className="text-sm">{item.id}</span>
                             </div>
                             <a className="block text-xl font-semibold" href="">{item.name}</a>
-                            <p className="py-4">{item.description}</p>
+                            <p className="pt-4 line-clamp-4">{item.description}</p>
                             <a className="inline-flex items-center font-medium" href="/services">See Details <TbArrowNarrowRight className="ml-2" /> </a>
                         </div>
 

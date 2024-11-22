@@ -27,8 +27,8 @@ export default function CatalogSwiperSection() {
                         initial="offscreen"
                         whileInView={"onscreen"}
                         variants={desVariants}
-                        className="pb-6 text-xl font-bold tracking-wider mt-5">LUXURY DECOR TO CREATE COMFORT IN OUR
-                        HOME
+                        className="pb-6 text-xl font-bold tracking-wider mt-5">Pioneering a Path to a Sustainable,
+                        Inclusive, and Thriving Future
                     </motion.h2>
                 </div>
 
@@ -38,14 +38,15 @@ export default function CatalogSwiperSection() {
                     variants={tagVariants}
                     className="grid grid-cols-2 text-gray-500 gap-x-8">
                     <p>
-                        In the heart of our journey lies a commitment to excellence, sustainability, and making a
-                        positive impact. This is the story of Perks Group—a conglomerate of companies dedicated to
-                        bringing about meaningful change and pioneering innovation across various industries.
+                        We are dedicated to establishing and achieving
+                        ambitious goals that reflect our mission and vision. These targets
+                        guide our collaborative efforts across all our businesses and
+                        initiatives.
                     </p>
                     <p>
-                        At HFA Perks BD, we are dedicated to establishing and achieving ambitious goals that reflect our
-                        mission and vision. These targets guide our collaborative efforts across all our businesses and
-                        initiatives.
+                       Our vision is to pioneer a path to a sustainable, inclusive, and thriving
+                        future for all. Our vision encapsulates our aspirations, guiding our actions, and inspiring our
+                        commitment to excellence in every endeavor.
                     </p>
                 </motion.div>
 
