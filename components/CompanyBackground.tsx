@@ -124,7 +124,7 @@ const CompanyBackground = () => {
                     style={{scale}}
                     ref={ref}
                     className='w-full'>
-                    <Image src="/image/12.jpg" width={700} height={700} alt={'company background'}/>
+                    <Image src="/image/10.jpg" width={700} height={700} alt={'company background'}/>
                 </motion.div>
             </div>
             <div className='pt-4'>

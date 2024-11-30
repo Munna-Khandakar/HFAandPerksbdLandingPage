@@ -42,5 +42,11 @@ export const ServiceData: ServiceType[] = [
         name: 'Cultural and Business Etiquette Training',
         description: 'Assisting Bangladeshi businesses in understanding Japanese business practices and culture for smoother negotiations and partnerships.',
         image: '/image/training.webp',
+    },
+    {
+        id: 8,
+        name: 'Door to Door parts Service through EMS',
+        description: 'Providing door-to-door delivery of small parts and components according to Cat parts number from Japan to Bangladesh through EMS services upto 35Kg at your doorsteps.',
+        image: '/image/ems.jpg',
     }
 ];
