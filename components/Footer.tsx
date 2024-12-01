@@ -80,7 +80,7 @@ export default function Footer() {
             className="py-10 bg-black dark:bg-primary">
                 <div className="container text-white text-center lg:justify-between lg:flex">
                     <div className="pb-4 lg:pb-0">
-                        <p>&copy; 2024 HFA and Perks Bd Co. Ltd. All Rights Reserved</p>
+                        <p>&copy; 2024 HFA and Perks Bd Co. Ltd. All Rights Reserved. [ Tech support from Myplate Inc. ]</p>
                     </div>
                     <div>
                         <Link className="p-4 hover:underline" href='/'>Privacy</Link>
