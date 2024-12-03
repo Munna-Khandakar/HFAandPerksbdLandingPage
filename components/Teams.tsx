@@ -8,41 +8,41 @@ const TEAM = [
         id: 1,
         name: "Major Md Arshad Hossain. psc, Infantry (Retired)",
         rank: "Managing Director - HFA Perks BD",
-        image: "/image/profile1.jpg",
+        image: "/image/team/arshad.jpeg",
         details: "Ex Cadet of Rajshahi Cadet College (29 th Batch | 92-98)"
     },
     {
         id: 2,
         name: "Hossain Mohammad Tofajjal",
         rank: "CEO - HFA Perks BD",
-        image: "/image/profile1.jpg",
+        image: "/image/team/tofajjal.jpeg",
     },
     {
         id: 3,
         name: "Major Md Rasheduzzaman Khan, psc, Artillery (Retired)",
         rank: "Director - HFA Perks BD",
-        image: "/image/profile1.jpg",
+        // image: "/image/team/profile1.jpg",
         details: "B.Sc Engg (CSE), MIST Ex Cadet of Barishal Cadet College (18th Batch | 95-01)"
     },
     {
         id: 4,
         name: "Lieutenant Colonel Belal Hossain Patwary, psc, Engineers (Retired)",
         rank: "Director - HFA Perks BD",
-        image: "/image/profile1.jpg",
+        image: "/image/team/belal.jpeg",
         details: "B.Sc Engg (Civil), MIST Ex Cadet of Sylhet Cadet College (13th Batch | 89-95)"
     },
     {
         id: 5,
         name: "Syed Moazzem Hossain",
         rank: "Advisor, Accounts & Finance- HFA Perks BD",
-        image: "/image/profile1.jpg",
+        image: "/image/team/moazzem.jpeg",
         details: "B.Sc in Fashion Design and Technology, BGMEA Institute of Fashion & Technology (BIFT) "
     },
     {
         id: 6,
         name: "Major Md Nahid islam Satil, psc, Infantry (Retired)",
         rank: "Director & Country Manager USA - HFA Perks BD",
-        image: "/image/profile1.jpg",
+        image: "/image/team/satil.jpeg",
         details: "Ex Cadet of Rajshahi Cadet College (32 nd Batch | 95-01)"
     }
 ]
@@ -68,6 +68,7 @@ export const Teams = () => {
                                 rank={team?.rank}
                                 name={team.name}
                                 details={team.details}
+                                image={team.image}
                             />
                         ))
                     }
