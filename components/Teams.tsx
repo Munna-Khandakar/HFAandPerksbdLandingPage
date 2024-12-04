@@ -21,7 +21,7 @@ const TEAM = [
         id: 3,
         name: "Major Md Rasheduzzaman Khan, psc, Artillery (Retired)",
         rank: "Director - HFA Perks BD",
-        // image: "/image/team/profile1.jpg",
+        image: "/image/team/rashed.jpg",
         details: "B.Sc Engg (CSE), MIST Ex Cadet of Barishal Cadet College (18th Batch | 95-01)"
     },
     {
