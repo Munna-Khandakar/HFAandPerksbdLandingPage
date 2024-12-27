@@ -5,7 +5,7 @@ export const ServiceData: ServiceType[] = [
         id: 1,
         name: 'Identifying trustworthy',
         description: 'Identifying trustworthy Japanese manufacturers and suppliers for sourcing quality products, ranging from small components to large machinery',
-        image: '/image/trust.jpg',
+        image: '/image/identify.webp',
     },
     {
         id: 2,
@@ -23,7 +23,7 @@ export const ServiceData: ServiceType[] = [
         id: 4,
         name: 'Market Research and Analysis',
         description: 'Providing insights into market trends, consumer preferences, and competitive analysis in both countries.',
-        image: '/image/market.jpg',
+        image: '/image/market-research.avif',
     },
     {
         id: 5,
@@ -48,5 +48,23 @@ export const ServiceData: ServiceType[] = [
         name: 'Door to Door parts Service through EMS',
         description: 'Providing door-to-door delivery of small parts and components according to Cat parts number from Japan to Bangladesh through EMS services upto 35Kg at your doorsteps.',
         image: '/image/ems.jpg',
+    },
+    {
+        id: 9,
+        name: 'Heavy Equipment Import',
+        description: 'Importing heavy machinery and equipment from Japan to Bangladesh, including sourcing, inspection, and logistics coordination.',
+        image: '/image/heavy.webp',
+    },
+    {
+        id: 10,
+        name: 'Car Parts Import',
+        description: 'Sourcing and importing genuine Car parts and components from Japan to Bangladesh for heavy machinery and equipment.',
+        image: '/image/car-parts.jpg',
+    },
+    {
+        id: 11,
+        name: 'Medical Device Import',
+        description: 'Sourcing and importing medical devices and equipment from Japan to Bangladesh, including quality control and logistics coordination.',
+        image: '/image/medical.png',
     }
 ];
