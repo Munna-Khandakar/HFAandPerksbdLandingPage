@@ -69,7 +69,7 @@ export const ServiceData: ServiceType[] = [
     },
     {
         id: 12,
-        name: 'Sports Device Import',
+        name: 'Sports Items Import',
         description: 'We are importing high quality golf & sports accessories',
         image: '/image/golf.jpeg',
     }
