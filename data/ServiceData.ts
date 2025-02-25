@@ -66,5 +66,11 @@ export const ServiceData: ServiceType[] = [
         name: 'Medical Device Import',
         description: 'Sourcing and importing medical devices and equipment from Japan to Bangladesh, including quality control and logistics coordination.',
         image: '/image/medical.png',
+    },
+    {
+        id: 12,
+        name: 'Sports Device Import',
+        description: 'We are importing high quality golf & sports accessories',
+        image: '/image/golf.jpeg',
     }
 ];
