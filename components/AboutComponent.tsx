@@ -3,6 +3,7 @@
 import Image from "next/image";
 import {motion} from "framer-motion";
 import {desVariants, tagVariants, titleVariants} from "@/utils/animation";
+import ChapterSelector from "@/components/ChapterSelector";
 
 const AboutComponent = () => {
     return (
@@ -44,24 +45,16 @@ const AboutComponent = () => {
                         whileInView={"onscreen"}
                         variants={tagVariants}
                         className="px-12 pb-4 mt-4">
-                        In the heart of our journey lies a commitment to excellence,
-                        sustainability, and making a positive impact. This is the story of
-                        Perks Group—a conglomerate of companies dedicated to
-                        bringing about meaningful change and pioneering innovation
-                        across various industries.
+                        We have four chapters, and each one curates services tailored to its region. Click a chapter to explore the programs we deliver together.
                     </motion.p>
 
-                    <motion.p
+                    <motion.div
                         initial="offscreen"
                         whileInView={"onscreen"}
                         variants={tagVariants}
                         className="px-12 pb-4">
-                        At HFA & Perks BD, our vision is to pioneer a path to a sustainable,
-                        inclusive, and thriving future for all. Our vision encapsulates our
-                        aspirations, guiding our actions, and inspiring our commitment to
-                        excellence in every endeavor.
-                        Our Services include:
-                    </motion.p>
+                        <ChapterSelector />
+                    </motion.div>
                 </div>
             </div>
         </div>
