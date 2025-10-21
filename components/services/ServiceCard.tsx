@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 type ServiceCardProps = {
-    id: number,
+    id: number | string,
     name: string,
     description: string,
     image: string,

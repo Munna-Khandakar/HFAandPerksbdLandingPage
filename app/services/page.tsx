@@ -1,5 +1,6 @@
 import {ServiceCard} from "@/components/services/ServiceCard";
 import {ServiceData} from "@/data/ServiceData";
+import {Chapter, ServiceType} from "@/types/ServiceType";
 
 export default function Projects() {
 
@@ -12,7 +13,7 @@ export default function Projects() {
 
             <div className="container grid lg:grid-cols-2 gap-8 py-8">
                 {
-                    ServiceData.map((project) => (
+                    ServiceData[Chapter.America].map((project: ServiceType) => (
                         <ServiceCard
                             key={project.id}
                             id={project.id}
