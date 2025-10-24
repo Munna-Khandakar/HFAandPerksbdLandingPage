@@ -24,13 +24,13 @@ export const ChapterCards: ChapterCard[] = [
         chapter: Chapter.America,
         title: "America Chapter",
         subtitle: "All USA product including Left Hand Vehicle",
-        logo: "/image/perks.jpeg",
+        logo: "/image/chapters/usa.jpeg",
     },
     {
         chapter: Chapter.Bangladesh,
         title: "Bangladesh Chapter",
         subtitle: "Jute, Leather, Fabrics and Medicine",
-        logo: "/image/perks.jpeg",
+        logo: "/image/chapters/bd.png",
     },
 ];
 

@@ -66,15 +66,16 @@ const ChapterSelector = ({className}: ChapterSelectorProps) => {
             )}
           >
             <CardHeader className="flex flex-row items-center gap-4">
-              <div className="flex h-14 w-14 items-center justify-center rounded-full border bg-white">
+              <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white">
                 <Image
                   src={card.logo}
                   alt={`${card.title} logo`}
-                  width={40}
-                  height={40}
+                  width={48}
+                  height={48}
+                  className="rounded-full object-cover"
                 />
               </div>
-              <div>
+              <div className="flex flex-col">
                 <CardTitle className="text-xl">{card.title}</CardTitle>
                 <CardDescription>{card.subtitle}</CardDescription>
               </div>
