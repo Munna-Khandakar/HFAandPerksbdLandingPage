@@ -2,7 +2,7 @@ import {Chapter, ChapterCard, ServiceType} from "@/types/ServiceType";
 
 export const ALL_CHAPTERS: Chapter[] = [
     Chapter.Japan,
-    Chapter.Africa,
+    Chapter.Pakistan,
     Chapter.America,
     Chapter.Bangladesh,
 ];
@@ -11,25 +11,25 @@ export const ChapterCards: ChapterCard[] = [
     {
         chapter: Chapter.Japan,
         title: "Japan Chapter",
-        subtitle: "Sourcing & Quality Assurance",
+        subtitle: "All USA product including Right Hand Vehicle",
         logo: "/image/chapter-japan.svg",
     },
     {
-        chapter: Chapter.Africa,
-        title: "Africa Chapter",
-        subtitle: "Infrastructure & Field Support",
+        chapter: Chapter.Pakistan,
+        title: "Pakistan Chapter",
+        subtitle: "Fabrics",
         logo: "/image/chapter-africa.svg",
     },
     {
         chapter: Chapter.America,
         title: "America Chapter",
-        subtitle: "Partnerships & Logistics",
+        subtitle: "All USA product including Left Hand Vehicle",
         logo: "/image/chapter-america.svg",
     },
     {
         chapter: Chapter.Bangladesh,
         title: "Bangladesh Chapter",
-        subtitle: "Local Distribution & Care",
+        subtitle: "Jute, Leather, Fabrics and Medicine",
         logo: "/image/chapter-bangladesh.svg",
     },
 ];
@@ -109,25 +109,13 @@ export const ServiceData: Record<Chapter, ServiceType[]> = {
             image: '/image/golf.jpeg',
         }
     ],
-    [Chapter.Africa]: [
+    [Chapter.Pakistan]: [
         {
-            id: "africa-01",
-            name: "Market Research and Analysis",
-            description: "Delivering on-the-ground insights into African market demand, pricing dynamics, and competitive landscapes.",
-            image: "/image/market-research.avif",
-        },
-        {
-            id: "africa-02",
-            name: "Technical Support and Consultation",
-            description: "Deploying regional engineers to commission equipment and train operators across key African hubs.",
-            image: "/image/support.jpg",
-        },
-        {
-            id: "africa-03",
-            name: "After-Sales Service and Support",
-            description: "Maintaining responsive field teams for warranty management, repairs, and uptime assurance.",
-            image: "/image/after.jpeg",
-        },
+            id: 1,
+            name: "Best Fabrics Clothes",
+            description: "Elegant suits or fabrics from Pakistan.",
+            image: "/image/cloth.webp",
+        }
     ],
     [Chapter.America]: [
         {
@@ -205,22 +193,28 @@ export const ServiceData: Record<Chapter, ServiceType[]> = {
     ],
     [Chapter.Bangladesh]: [
         {
-            id: "bangladesh-01",
-            name: "Automotive Component Import",
-            description: "Supplying certified automotive and heavy machinery parts tailored to Bangladeshi fleet needs.",
-            image: "/image/car-parts.jpg",
+            id: 1,
+            name: "Jute Products",
+            description: "Supplying best quality jute products from Bangladesh",
+            image: "/image/jute.jpg",
         },
         {
-            id: "bangladesh-02",
-            name: "Healthcare Technology Sourcing",
-            description: "Importing medical devices with end-to-end compliance support for local healthcare providers.",
-            image: "/image/medical.png",
+            id: 2,
+            name: "Leather Products",
+            description: "Get the best quality leather products from Bangladesh",
+            image: "/image/leather.jpg",
         },
         {
-            id: "bangladesh-03",
-            name: "Sports and Lifestyle Distribution",
-            description: "Delivering premium sports equipment and lifestyle brands to retail partners nationwide.",
-            image: "/image/golf.jpeg",
+            id: 3,
+            name: "Best Fabrics Clothes",
+            description: "Elegant suits or fabrics from Bangladesh.",
+            image: "/image/cloth.webp",
+        },
+        {
+            id: 4,
+            name: "Medicine",
+            description: "Get the best medicines from Bangladesh.",
+            image: "/image/medicine.jpg",
         },
     ],
 };

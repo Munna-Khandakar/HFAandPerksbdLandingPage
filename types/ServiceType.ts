@@ -1,6 +1,6 @@
 export enum Chapter {
     Japan = "japan",
-    Africa = "africa",
+    Pakistan = "pakistan",
     America = "america",
     Bangladesh = "bd",
 }
