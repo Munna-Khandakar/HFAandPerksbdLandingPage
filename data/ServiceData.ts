@@ -11,7 +11,7 @@ export const ChapterCards: ChapterCard[] = [
     {
         chapter: Chapter.Japan,
         title: "Japan Chapter",
-        subtitle: "All USA product including Right Hand Vehicle",
+        subtitle: "All Japan product including Right Hand Vehicle",
         logo: "/image/perks.jpeg",
     },
     {
