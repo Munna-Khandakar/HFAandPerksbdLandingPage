@@ -75,6 +75,16 @@ export default function CatalogSwiperSection() {
             >
                 <SwiperSlide>
                     <Image
+                        src="/image/4.jpg"
+                        alt="Swiper"
+                        width={520}
+                        height={220}
+                        className="w-full h-[220px] object-fit"
+                        unoptimized={true}
+                    />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Image
                         src="/image/1.jpg"
                         alt="Swiper"
                         width={520}
@@ -103,16 +113,7 @@ export default function CatalogSwiperSection() {
                         unoptimized={true}
                     />
                 </SwiperSlide>
-                <SwiperSlide>
-                    <Image
-                        src="/image/4.jpg"
-                        alt="Swiper"
-                        width={520}
-                        height={220}
-                        className="w-full h-[220px] object-fit"
-                        unoptimized={true}
-                    />
-                </SwiperSlide>
+
                 <SwiperSlide>
                     <Image
                         src="/image/5.jpg"
