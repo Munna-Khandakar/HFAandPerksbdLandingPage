@@ -37,7 +37,7 @@ const AboutComponent = () => {
                         whileInView={"onscreen"}
                         variants={desVariants}
                         className="px-12 tracking-wider uppercase text-gray-400 mt-3">
-                        HFA and Perks Bd Co. Ltd
+                        Perks Group
                     </motion.p>
 
                     <motion.p
