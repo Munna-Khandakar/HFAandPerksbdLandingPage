@@ -16,8 +16,8 @@ const Josef = Sen({
 });
 
 export const metadata = {
-  title: "HFA and Perks Bd Co. Ltd",
-  description: "HFA and Perks Bd Co. Ltd",
+  title: "Perks Group",
+  description: "Perks Group",
 };
 
 export default function RootLayout({children}: Readonly<{ children: ReactNode; }>) {

@@ -19,11 +19,11 @@ const page = () => {
                         Who are we?
                     </motion.h1>
                     <h2 className="text-2xl text-center font-light leading-10">
-                        Welcome to HFA and PerksBD, a conglomerate of companies
+                        Welcome to Perks Group, a conglomerate of companies
                         dedicated to excellence and making a positive impact in various
                         domains. We are driven by a shared commitment to quality,
                         sustainability, and social responsibility. Our group comprises Perks
-                        Auto, Perks Tex, Perks Charity, Perks Agro, and Perks Solutions, each
+                        Auto, Perks Tex, Perks Charity, Perks Agro, Perks Sports and Perks Solutions, each
                         specializing in their unique field while embodying our core values.
                     </h2>
                 </div>

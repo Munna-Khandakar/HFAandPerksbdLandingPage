@@ -16,7 +16,7 @@ const HeroSection = () => {
                     whileInView={"onscreen"}
                     variants={titleVariants}
                     className='tracking-widest uppercase'>
-                    HFA and Perks Bd Co. Ltd
+                    Perks Group
                 </motion.p>
 
                 <motion.h1
@@ -24,7 +24,7 @@ const HeroSection = () => {
                     whileInView={"onscreen"}
                     variants={desVariants}
                     className='h1'>
-                    Welcome to<br/>HFA and PerksBD
+                    Welcome to<br/>Perks Group
                 </motion.h1>
 
                 <motion.p
@@ -36,7 +36,7 @@ const HeroSection = () => {
                     dedicated to excellence and making a positive impact in various
                     domains. We are driven by a shared commitment to quality,
                     sustainability, and social responsibility. Our group comprises Perks
-                    Auto, Perks Tex, Perks Charity, Perks Agro, and Perks Solutions, each
+                    Auto, Perks Tex, Perks Charity, Perks Agro, Perks Sports and Perks Solutions, each
                     specializing in their unique field while embodying our core values.
                 </motion.p>
 
