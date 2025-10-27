@@ -104,10 +104,10 @@ const ContactSection: React.FC = () => {
                                     Corporate Office
                                 </h4>
                                 <p className="text-sm mb-1 dark:text-gray-300">
-                                    <span className="font-semibold">Address:</span> Road # 6C, House # 83, Level # 4, Banani DOHS
+                                    <span className="font-semibold">Address:</span> Shop No. 11, Level 5, Mirpur DOHS Shopping Complex, Dhaka - 1216
                                 </p>
                                 <p className="text-sm dark:text-gray-300">
-                                    <span className="font-semibold">Email:</span> arshad@perksbd.com
+                                    <span className="font-semibold">Email:</span> arshad@perksbd.com, info@perksbd.com
                                 </p>
                             </div>
                             <div className="p-6 bg-white dark:bg-gray-700 shadow-md rounded-lg fade-in-up">
