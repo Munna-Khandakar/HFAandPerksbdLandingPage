@@ -22,7 +22,7 @@ export const ChapterCards: ChapterCard[] = [
     },
     {
         chapter: Chapter.America,
-        title: "America Chapter",
+        title: "USA chapter",
         subtitle: "All USA product including Left Hand Vehicle",
         logo: "/image/chapters/usa.gif",
     },

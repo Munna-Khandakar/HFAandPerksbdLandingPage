@@ -24,27 +24,27 @@ const TEAM = [
         image: "/image/team/rashed.jpg",
         details: "B.Sc Engg (CSE), MIST Ex Cadet of Barishal Cadet College (18th Batch | 95-01)"
     },
-    {
-        id: 4,
-        name: "Lieutenant Colonel Belal Hossain Patwary, psc, Engineers (Retired)",
-        rank: "Director - Perks Group",
-        image: "/image/team/belal.jpeg",
-        details: "B.Sc Engg (Civil), MIST Ex Cadet of Sylhet Cadet College (13th Batch | 89-95)"
-    },
-    {
-        id: 5,
-        name: "Syed Moazzem Hossain",
-        rank: "Advisor, Accounts & Finance- Perks Group",
-        image: "/image/team/moazzem.jpeg",
-        details: "B.Sc in Fashion Design and Technology, BGMEA Institute of Fashion & Technology (BIFT) "
-    },
-    {
-        id: 6,
-        name: "Major Md Nahid islam Satil, psc, Infantry (Retired)",
-        rank: "Director & Country Manager USA - Perks Group",
-        image: "/image/team/satil.jpeg",
-        details: "Ex Cadet of Rajshahi Cadet College (32 nd Batch | 95-01)"
-    }
+    // {
+    //     id: 4,
+    //     name: "Lieutenant Colonel Belal Hossain Patwary, psc, Engineers (Retired)",
+    //     rank: "Director - Perks Group",
+    //     image: "/image/team/belal.jpeg",
+    //     details: "B.Sc Engg (Civil), MIST Ex Cadet of Sylhet Cadet College (13th Batch | 89-95)"
+    // },
+    // {
+    //     id: 5,
+    //     name: "Syed Moazzem Hossain",
+    //     rank: "Advisor, Accounts & Finance- Perks Group",
+    //     image: "/image/team/moazzem.jpeg",
+    //     details: "B.Sc in Fashion Design and Technology, BGMEA Institute of Fashion & Technology (BIFT) "
+    // },
+    // {
+    //     id: 6,
+    //     name: "Major Md Nahid islam Satil, psc, Infantry (Retired)",
+    //     rank: "Director & Country Manager USA - Perks Group",
+    //     image: "/image/team/satil.jpeg",
+    //     details: "Ex Cadet of Rajshahi Cadet College (32 nd Batch | 95-01)"
+    // }
 ]
 
 export const Teams = () => {
