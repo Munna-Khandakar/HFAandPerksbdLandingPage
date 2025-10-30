@@ -31,7 +31,7 @@ const CompanyTarget = () => {
                     whileInView={"onscreen"}
                     variants={desVariants}
                     className='text-2xl text-center font-medium pb-10 mt-5'>
-                    At HFA Perks BD, we are dedicated to establishing and achieving
+                    At Perks Group, we are dedicated to establishing and achieving
                     ambitious goals that reflect our mission and vision. These targets
                     guide our collaborative efforts across all our businesses and
                     initiatives. Our objectives include:
