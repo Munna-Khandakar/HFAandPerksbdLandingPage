@@ -10,9 +10,15 @@ type ServiceCardProps = {
 export const ServiceCard = (props: ServiceCardProps) => {
     const {id, name, description, image} = props;
     return (
-        <div key={id} className="relative overflow-hidden rounded-xl group">
-            <div>
-                <Image src={image} width={480} height={380} alt="" className="w-full max-h-[380px]"/>
+        <div key={id} className="relative overflow-hidden rounded-xl group h-[380px]">
+            <div className="w-full h-full">
+                <Image
+                    src={image}
+                    width={480}
+                    height={380}
+                    alt={name}
+                    className="w-full h-full object-cover"
+                />
             </div>
             <div
                 className="text-center absolute bottom-0 right-0 bg-white/90 dark:bg-black/40 flex-col items-center justify-end w-full md:w-96 gap-32 p-12 text-xl transition duration-300 ease-in-out translate-y-full from-transparent to-black group-hover:translate-y-0">

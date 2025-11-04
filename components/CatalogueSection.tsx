@@ -1,10 +1,35 @@
+'use client'
+
 import Image from "next/image";
 import {TbArrowNarrowRight} from "react-icons/tb";
+import {motion} from "framer-motion";
 import {ServiceData} from "@/data/ServiceData";
 import {Chapter} from "@/types/ServiceType";
 
 type CatalogueSectionProps = {
     chapter: Chapter;
+};
+
+const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.1
+        }
+    }
+};
+
+const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 0.5,
+            ease: "easeOut"
+        }
+    }
 };
 
 export default function CatalogueSection({chapter}: CatalogueSectionProps) {
@@ -15,19 +40,25 @@ export default function CatalogueSection({chapter}: CatalogueSectionProps) {
     }
 
     return (
-        <div className="grid gap-8 md:grid-cols-4 grid-cols-1 lg:gap-0 divide-gray-300 lg:divide-x">
+        <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={containerVariants}
+            className="grid gap-8 md:grid-cols-4 grid-cols-1 lg:gap-0 divide-gray-300 lg:divide-x"
+        >
             {services.map((item) => (
-                <div
+                <motion.div
                     key={item.id}
-                    className="relative overflow-hidden group"
+                    variants={itemVariants}
+                    className="relative overflow-hidden group h-[400px]"
                 >
-                    <div>
+                    <div className="w-full h-full">
                         <Image
                             src={item.image}
                             width={380}
-                            height={100}
+                            height={400}
                             alt={item.name}
-                            className="w-full border h-[400px]"
+                            className="w-full h-full object-cover border"
                         />
                     </div>
 
@@ -47,8 +78,8 @@ export default function CatalogueSection({chapter}: CatalogueSectionProps) {
                         <p className="tracking-wider -rotate-90 text-sm text-start">{item.name}</p>
                         <span className="pt-4 uppercase">{item.id}</span>
                     </div>
-                </div>
+                </motion.div>
             ))}
-        </div>
+        </motion.div>
     )
 }
