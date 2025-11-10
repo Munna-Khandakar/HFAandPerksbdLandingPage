@@ -157,11 +157,13 @@ const ContactSection: React.FC = () => {
                                     Japan Office
                                 </h4>
                                 <p className="text-sm mb-1 dark:text-gray-300">
-                                    <span className="font-semibold">Address:</span> 30-23 Matchubacho, Tokorozawa City,
-                                    Saitama Prefecture, Japan 359-0044
+                                    <span className="font-semibold">Address:</span> Saitama Ken, Tokorozawa Shi, Kamiyamaguchi 1686, Japan
                                 </p>
                                 <p className="text-sm mb-1 dark:text-gray-300">
-                                    <span className="font-semibold">Phone:</span> 04-2936-9310
+                                    <span className="font-semibold">Tel:</span> 042936-9310
+                                </p>
+                                <p className="text-sm mb-1 dark:text-gray-300">
+                                    <span className="font-semibold">Fax:</span> 04-2936-9621
                                 </p>
                                 <p className="text-sm dark:text-gray-300">
                                     <span className="font-semibold">Email:</span> hfaperksbd@gmail.com
