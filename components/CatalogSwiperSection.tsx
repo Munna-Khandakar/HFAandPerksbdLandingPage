@@ -75,11 +75,11 @@ export default function CatalogSwiperSection() {
             >
                 <SwiperSlide>
                     <Image
-                        src="/image/4.jpg"
+                        src="/image/japan-day.jpeg"
                         alt="Swiper"
                         width={520}
-                        height={220}
-                        className="w-full h-[220px] object-fit"
+                        height={320}
+                        className="w-full h-[320px] object-fit"
                         unoptimized={true}
                     />
                 </SwiperSlide>
@@ -88,8 +88,8 @@ export default function CatalogSwiperSection() {
                         src="/image/1.jpg"
                         alt="Swiper"
                         width={520}
-                        height={220}
-                        className="w-full h-[220px] object-fit"
+                        height={320}
+                        className="w-full h-[320px] object-fit"
                         unoptimized={true}
                     />
                 </SwiperSlide>
@@ -98,29 +98,29 @@ export default function CatalogSwiperSection() {
                         src="/image/2.jpg"
                         alt="Swiper"
                         width={520}
-                        height={220}
-                        className="w-full h-[220px] object-fit"
+                        height={320}
+                        className="w-full h-[320px] object-fit"
                         unoptimized={true}
                     />
                 </SwiperSlide>
                 <SwiperSlide>
                     <Image
-                        src="/image/3.jpg"
+                        src="/image/japan-night.jpeg"
                         alt="Swiper"
                         width={520}
-                        height={220}
-                        className="w-full h-[220px] object-fit"
+                        height={320}
+                        className="w-full h-[320px] object-fit"
                         unoptimized={true}
                     />
                 </SwiperSlide>
 
                 <SwiperSlide>
                     <Image
-                        src="/image/5.jpg"
+                        src="/image/3.jpg"
                         alt="Swiper"
                         width={520}
-                        height={220}
-                        className="w-full h-[220px] object-fit"
+                        height={320}
+                        className="w-full h-[320px] object-fit"
                         unoptimized={true}
                     />
                 </SwiperSlide>

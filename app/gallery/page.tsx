@@ -18,7 +18,7 @@ const page = () => {
           <img className="h-auto max-w-full rounded-lg hover:scale-90 transition-all" src="/image/4.jpg" />
         </div>
         <div>
-          <img className="h-auto max-w-full rounded-lg hover:scale-90 transition-all" src="/image/5.jpg" />
+          <img className="h-auto max-w-full rounded-lg hover:scale-90 transition-all" src="/image/japan-day.jpeg" />
         </div>
         <div>
           <img className="h-auto max-w-full rounded-lg hover:scale-90 transition-all" src="/image/6.jpg" />
@@ -42,7 +42,7 @@ const page = () => {
           <img className="h-auto max-w-full rounded-lg hover:scale-90 transition-all" src="/image/11.jpg" />
         </div>
         <div>
-          <img className="h-auto max-w-full rounded-lg hover:scale-90 transition-all" src="/image/9.png" />
+          <img className="h-auto max-w-full rounded-lg hover:scale-90 transition-all" src="/image/japan-night.jpeg" />
         </div>
         <div>
           <img className="h-auto max-w-full rounded-lg hover:scale-90 transition-all" src="/image/12.jpg" />
