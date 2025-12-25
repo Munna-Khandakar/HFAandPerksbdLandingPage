@@ -1,14 +1,14 @@
-export const containerVariants = (delay = 0)=> ({
+export const containerVariants = (delay = 0) => ({
     "offscreen": {
         opacity: 0,
-        y: 30
+        y: 20  // Reduced from 30
     },
     "onscreen": {
         opacity: 1,
         y: 0,
         transition: {
             type: "spring",
-            duration: 2,
+            duration: 0.6,  // Reduced from 2
             delay
         }
     }
@@ -24,8 +24,8 @@ export const tagVariants = {
         y: 0,
         transition: {
             type: "spring",
-            duration: 2.8,
-            delay: .4
+            duration: 0.5,  // Reduced from 2.8
+            delay: 0.1     // Reduced from 0.4
         }
     }
 }
@@ -33,14 +33,14 @@ export const tagVariants = {
 export const titleVariants = {
     "offscreen": {
         opacity: 0,
-        y: 30
+        y: 20  // Reduced from 30
     },
     "onscreen": {
         opacity: 1,
         y: 0,
         transition: {
             type: "spring",
-            duration: 2.2,
+            duration: 0.6,  // Reduced from 2.2
         }
     }
 }
@@ -55,8 +55,8 @@ export const desVariants = {
         y: 0,
         transition: {
             type: "spring",
-            duration: 2.6,
-            delay:.2
+            duration: 0.6,  // Reduced from 2.6
+            delay: 0.1     // Reduced from 0.2
         }
     }
 }

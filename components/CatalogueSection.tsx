@@ -1,10 +1,11 @@
 'use client'
 
 import Image from "next/image";
-import {TbArrowNarrowRight} from "react-icons/tb";
+import {ArrowRight} from "lucide-react";
 import {motion} from "framer-motion";
 import {ServiceData} from "@/data/ServiceData";
 import {Chapter} from "@/types/ServiceType";
+import Link from "next/link";
 
 type CatalogueSectionProps = {
     chapter: Chapter;
@@ -15,7 +16,7 @@ const containerVariants = {
     visible: {
         opacity: 1,
         transition: {
-            staggerChildren: 0.1
+            staggerChildren: 0.05
         }
     }
 };
@@ -26,7 +27,7 @@ const itemVariants = {
         opacity: 1,
         y: 0,
         transition: {
-            duration: 0.5,
+            duration: 0.4,
             ease: "easeOut"
         }
     }
@@ -44,13 +45,13 @@ export default function CatalogueSection({chapter}: CatalogueSectionProps) {
             initial="hidden"
             animate="visible"
             variants={containerVariants}
-            className="grid gap-8 md:grid-cols-4 grid-cols-1 lg:gap-0 divide-gray-300 lg:divide-x"
+            className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 grid-cols-1"
         >
             {services.map((item) => (
                 <motion.div
                     key={item.id}
                     variants={itemVariants}
-                    className="relative overflow-hidden group h-[400px]"
+                    className="relative overflow-hidden group h-[400px] rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300"
                 >
                     <div className="w-full h-full">
                         <Image
@@ -58,25 +59,28 @@ export default function CatalogueSection({chapter}: CatalogueSectionProps) {
                             width={380}
                             height={400}
                             alt={item.name}
-                            className="w-full h-full object-cover border"
+                            className="w-full h-full object-cover"
                         />
                     </div>
 
-                    <div className="absolute top-0 p-8 bg-white text-black bg-opacity-60 backdrop-blur m-12">
-                        <div className="flex justify-between pb-4">
-                            <p className="text-sm">{item.name}</p>
-                            <span className="text-sm uppercase">{item.id}</span>
+                    <div className="absolute top-0 p-6 bg-white/90 dark:bg-neutral-900/90 backdrop-blur-md m-6 rounded-lg shadow-lg">
+                        <div className="flex justify-between pb-3 items-center">
+                            <p className="body-sm font-semibold text-neutral-900 dark:text-neutral-50">{item.name}</p>
+                            <span className="body-xs uppercase text-primary-600 dark:text-primary-400 font-semibold">{item.id}</span>
                         </div>
-                        <span className="block text-xl font-semibold">{item.name}</span>
-                        <p className="pt-4 line-clamp-4">{item.description}</p>
-                        <a className="inline-flex items-center font-medium" href="/services">
-                            See Details <TbArrowNarrowRight className="ml-2"/>
-                        </a>
+                        <span className="block h4 text-neutral-900 dark:text-neutral-50">{item.name}</span>
+                        <p className="pt-3 body-sm line-clamp-4 text-neutral-600 dark:text-neutral-400">{item.description}</p>
+                        <Link
+                            className="inline-flex items-center font-medium mt-3 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors"
+                            href="/services"
+                        >
+                            See Details <ArrowRight className="ml-2 w-4 h-4"/>
+                        </Link>
                     </div>
 
-                    <div className="inset-0 bg-tertiary flex-col items-center justify-end md:flex md:absolute gap-32 pb-4 transition duration-300 ease-in-out border-b-2 group-hover:translate-y-full md:border-b-0 hidden">
-                        <p className="tracking-wider -rotate-90 text-sm text-start">{item.name}</p>
-                        <span className="pt-4 uppercase">{item.id}</span>
+                    <div className="inset-0 bg-neutral-50 dark:bg-neutral-800 flex-col items-center justify-end md:flex md:absolute gap-32 pb-4 transition duration-300 ease-in-out border-b-2 border-primary-600 group-hover:translate-y-full md:border-b-0 hidden">
+                        <p className="tracking-wider -rotate-90 body-sm text-start text-neutral-900 dark:text-neutral-50">{item.name}</p>
+                        <span className="pt-4 uppercase body-xs text-primary-600 dark:text-primary-400 font-semibold">{item.id}</span>
                     </div>
                 </motion.div>
             ))}

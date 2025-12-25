@@ -1,5 +1,5 @@
 import {ReactNode} from 'react';
-import { Sen } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
 //Components
@@ -9,21 +9,23 @@ import Footer from "@/components/Footer";
 //Theme Provider
 import { ThemeProvider } from "@/components/ThemeProvider";
 
-const Josef = Sen({ 
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  display: "swap" 
+  weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
+  variable: "--font-inter",
 });
 
 export const metadata = {
-  title: "Perks Group",
-  description: "Perks Group",
+  title: "Perks Group - Premium Import/Export Trading Company",
+  description: "International trading company specializing in import/export services across Japan, USA, Pakistan, and Bangladesh. Quality products, reliable global logistics.",
+  keywords: ["import", "export", "trading", "international", "logistics"],
 };
 
 export default function RootLayout({children}: Readonly<{ children: ReactNode; }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={Josef.className}>
+      <body className={inter.className}>
         <ThemeProvider attribute='class' defaultTheme='light'>
           <Header />
             {children}

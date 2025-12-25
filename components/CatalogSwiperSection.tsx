@@ -1,7 +1,7 @@
 "use client";
-import {TbArrowUpRight} from "react-icons/tb";
+import {ArrowUpRight} from "lucide-react";
 import {Button} from "./ui/button";
-
+import Link from "next/link";
 import {motion} from "framer-motion";
 
 // Import Swiper React components
@@ -13,21 +13,21 @@ import {desVariants, tagVariants, titleVariants} from "@/utils/animation";
 
 export default function CatalogSwiperSection() {
     return (
-        <div className="py-8 lg:py-28">
-            <div className="container grid pb-8 lg:grid-cols-1">
+        <div className="section-padding bg-neutral-50 dark:bg-neutral-900">
+            <div className="container grid pb-8 lg:grid-cols-1 gap-8">
                 <div className="text-left">
                     <motion.h1
                         initial="offscreen"
                         whileInView={"onscreen"}
                         variants={titleVariants}
-                        className="py-4 text-4xl font-medium lg:text-6xl lg:py-0">Successful Stories
+                        className="display-md text-neutral-900 dark:text-neutral-50">Successful Stories
                     </motion.h1>
 
                     <motion.h2
                         initial="offscreen"
                         whileInView={"onscreen"}
                         variants={desVariants}
-                        className="pb-6 text-xl font-bold tracking-wider mt-5">Pioneering a Path to a Sustainable,
+                        className="h3 mt-4 text-neutral-700 dark:text-neutral-300">Pioneering a Path to a Sustainable,
                         Inclusive, and Thriving Future
                     </motion.h2>
                 </div>
@@ -36,7 +36,7 @@ export default function CatalogSwiperSection() {
                     initial="offscreen"
                     whileInView={"onscreen"}
                     variants={tagVariants}
-                    className="grid grid-cols-2 text-gray-500 gap-x-8">
+                    className="grid md:grid-cols-2 gap-8 body-lg text-neutral-600 dark:text-neutral-400">
                     <p>
                         We are dedicated to establishing and achieving
                         ambitious goals that reflect our mission and vision. These targets
@@ -50,11 +50,11 @@ export default function CatalogSwiperSection() {
                     </p>
                 </motion.div>
 
-                <a href="/gallery">
-                    <Button
-                        className="inline-flex items-center px-8 py-3 mt-4 text-white rounded-full shadow-lg hover:bg-gray-800 hover:ring-2 hover:ring-gray-950 ring-offset-2">View
-                        Gallery <TbArrowUpRight className="w-5 h-5 ml-2"/> </Button>
-                </a>
+                <Button variant="premium" size="lg" asChild>
+                    <Link href="/gallery">
+                        View Gallery <ArrowUpRight className="w-5 h-5 ml-2"/>
+                    </Link>
+                </Button>
             </div>
 
             {/* Swiper Section */}
@@ -76,52 +76,47 @@ export default function CatalogSwiperSection() {
                 <SwiperSlide>
                     <Image
                         src="/image/japan-day.jpeg"
-                        alt="Swiper"
+                        alt="Perks Group Japan operations day view"
                         width={520}
                         height={320}
-                        className="w-full h-[320px] object-fit"
-                        unoptimized={true}
+                        className="w-full h-[320px] object-cover rounded-xl"
                     />
                 </SwiperSlide>
                 <SwiperSlide>
                     <Image
                         src="/image/1.jpg"
-                        alt="Swiper"
+                        alt="Perks Group international operations"
                         width={520}
                         height={320}
-                        className="w-full h-[320px] object-fit"
-                        unoptimized={true}
+                        className="w-full h-[320px] object-cover rounded-xl"
                     />
                 </SwiperSlide>
                 <SwiperSlide>
                     <Image
                         src="/image/2.jpg"
-                        alt="Swiper"
+                        alt="Global trading excellence"
                         width={520}
                         height={320}
-                        className="w-full h-[320px] object-fit"
-                        unoptimized={true}
+                        className="w-full h-[320px] object-cover rounded-xl"
                     />
                 </SwiperSlide>
                 <SwiperSlide>
                     <Image
                         src="/image/japan-night.jpeg"
-                        alt="Swiper"
+                        alt="Perks Group Japan operations night view"
                         width={520}
                         height={320}
-                        className="w-full h-[320px] object-fit"
-                        unoptimized={true}
+                        className="w-full h-[320px] object-cover rounded-xl"
                     />
                 </SwiperSlide>
 
                 <SwiperSlide>
                     <Image
                         src="/image/3.jpg"
-                        alt="Swiper"
+                        alt="Import export services showcase"
                         width={520}
                         height={320}
-                        className="w-full h-[320px] object-fit"
-                        unoptimized={true}
+                        className="w-full h-[320px] object-cover rounded-xl"
                     />
                 </SwiperSlide>
             </Swiper>

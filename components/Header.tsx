@@ -30,9 +30,9 @@ const Header = () => {
         <header
             className={`${
                 header
-                    ? 'py-4 bg-tertiary shadow-lg dark:bg-accent'
-                    : 'py-6 dark:bg-transparent'
-            } sticky top-0 z-30 transition-all ${pathname === '/' && 'bg-[#fff]'}`}
+                    ? 'py-4 bg-white/80 backdrop-blur-lg shadow-md dark:bg-neutral-900/90'
+                    : 'py-6 bg-white/60 backdrop-blur-sm dark:bg-transparent'
+            } sticky top-0 z-30 transition-all duration-300 ${pathname === '/' && 'bg-white/80 backdrop-blur-lg'}`}
         >
             <div className='container mx-auto'>
                 <div className='flex items-center justify-between'>
@@ -42,8 +42,8 @@ const Header = () => {
                         {/* Nav Section */}
                         <Nav
                             containerStyles='hidden xl:flex gap-x-8 items-center'
-                            linkStyles='relative hover:text-primary transition-all'
-                            underlineStyles='absolute left-0 top-full h-[2px] bg-primary w-full'
+                            linkStyles='relative hover:text-primary-600 transition-all duration-300'
+                            underlineStyles='absolute left-0 top-full h-[2px] bg-primary-600 w-full'
                         />
 
                         {/* Theme Toggler */}
