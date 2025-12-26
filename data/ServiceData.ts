@@ -107,6 +107,12 @@ export const ServiceData: Record<Chapter, ServiceType[]> = {
             name: 'Sports Items Import',
             description: 'We are importing high quality golf & sports accessories',
             image: '/image/golf.jpeg',
+        },
+        {
+            id: 13,
+            name: 'Cosmetics & Daily Needs Export',
+            description: 'Exporting high-quality cosmetics and daily necessities from Japan, including beauty products, personal care items, and household essentials.',
+            image: '/image/cosmetics.webp',
         }
     ],
     [Chapter.Pakistan]: [
@@ -115,6 +121,12 @@ export const ServiceData: Record<Chapter, ServiceType[]> = {
             name: "Best Fabrics Clothes",
             description: "Elegant suits or fabrics from Pakistan.",
             image: "/image/cloth.webp",
+        },
+        {
+            id: 2,
+            name: "Traditional Desi Dresses",
+            description: "Exporting traditional Pakistani desi female dresses, including elegant shalwar kameez, lehengas, and embroidered garments crafted with premium fabrics.",
+            image: "/image/slider/cloth.webp",
         }
     ],
     [Chapter.America]: [
@@ -189,6 +201,12 @@ export const ServiceData: Record<Chapter, ServiceType[]> = {
             name: 'Sports Items Import',
             description: 'We are importing high quality golf & sports accessories',
             image: '/image/golf.jpeg',
+        },
+        {
+            id: 13,
+            name: 'Commodities & Materials Export',
+            description: 'Sourcing and exporting premium commodities from the USA, including various nuts (almonds, walnuts), premium dates, metal scrap for recycling, specialty coffee beans, and refined soya oil.',
+            image: '/image/slider/nuts.avif',
         }
     ],
     [Chapter.Bangladesh]: [
@@ -216,5 +234,11 @@ export const ServiceData: Record<Chapter, ServiceType[]> = {
             description: "Get the best medicines from Bangladesh.",
             image: "/image/medicine.jpg",
         },
+        {
+            id: 5,
+            name: "Skilled Manpower Export",
+            description: "Providing skilled and semi-skilled manpower services from Bangladesh to international markets, including technical workers, laborers, and specialized professionals.",
+            image: "/image/slider/manpower.jpeg",
+        }
     ],
 };
