@@ -16,28 +16,52 @@ import 'swiper/css/pagination';
 // Slide data configuration
 const heroSlides = [
     {
-        image: '/image/11.jpg',
-        tag: 'Welcome to Perks Group',
-        headline: 'Global Trading Excellence',
-        subtext: 'Connecting markets across Japan, Pakistan, America & Bangladesh'
+        image: '/image/slider/cars.avif',
+        tag: 'Automotive Solutions',
+        headline: 'Premium Vehicle Import Services',
+        subtext: 'We provide quality right-hand and left-hand vehicles from Japan and America, delivering reliability and excellence to your doorstep'
     },
     {
-        image: '/image/logistics.jpeg',
-        tag: 'Seamless Operations',
-        headline: 'Trusted Import & Export Solutions',
-        subtext: 'Quality-driven services across multiple industries'
+        image: '/image/slider/manpower.jpeg',
+        tag: 'Workforce Solutions',
+        headline: 'Skilled Manpower Services',
+        subtext: 'We provide qualified professionals and workforce solutions across industries, bridging talent gaps in global markets'
     },
     {
-        image: '/image/japan-day.jpeg',
-        tag: 'International Reach',
-        headline: 'Expanding Global Horizons',
-        subtext: 'Strategic partnerships spanning four continents'
+        image: '/image/slider/cloth.webp',
+        tag: 'Textile Excellence',
+        headline: 'Premium Fabrics & Garments',
+        subtext: 'We supply finest quality textiles and ready-made garments from Pakistan and Bangladesh, connecting global markets with elegance'
     },
     {
-        image: '/image/3.jpg',
-        tag: 'Comprehensive Services',
-        headline: 'Excellence in Every Division',
-        subtext: 'From Auto to Agro, Sports to Solutions'
+        image: '/image/slider/soyabin.jpg',
+        tag: 'Agricultural Trading',
+        headline: 'Quality Soybeans & Grains',
+        subtext: 'We provide premium agricultural commodities including soybeans and grains, supporting food security and industrial needs'
+    },
+    {
+        image: '/image/slider/coffee.jpg',
+        tag: 'Agricultural Exports',
+        headline: 'Premium Coffee & Beverages',
+        subtext: 'We offer finest quality coffee and agricultural products, sourced from trusted suppliers and delivered with care'
+    },
+    {
+        image: '/image/slider/dates.jpg',
+        tag: 'Quality Agro Products',
+        headline: 'Premium Dates & Dry Fruits',
+        subtext: 'We deliver the finest selection of dates, nuts, and dried fruits from trusted sources, ensuring freshness and quality'
+    },
+    {
+        image: '/image/slider/nuts.avif',
+        tag: 'Nutritional Excellence',
+        headline: 'Premium Nuts & Seeds',
+        subtext: 'We supply high-quality nuts and seeds from global sources, providing nutritious products that meet international standards'
+    },
+    {
+        image: '/image/slider/scrap.jpg',
+        tag: 'Recycling Solutions',
+        headline: 'Metal Scrap & Recycling Services',
+        subtext: 'We offer comprehensive scrap metal trading and recycling solutions, promoting sustainability in global supply chains'
     }
 ];
 
