@@ -6,7 +6,7 @@ import {motion} from "framer-motion";
 import {Inbox} from "lucide-react";
 import ChapterSelector from "@/components/ChapterSelector";
 import {ServiceCard} from "@/components/services/ServiceCard";
-import {ServiceData} from "@/data/ServiceData";
+import {ChapterCards, ServiceData} from "@/data/ServiceData";
 import {ServiceType} from "@/types/ServiceType";
 import {getChapterFromParam} from "@/lib/chapter";
 import {PageHero} from "@/components/layout/PageHero";
@@ -39,11 +39,12 @@ const itemVariants = {
 function ServicesPageContent() {
     const searchParams = useSearchParams();
     const servicesGridRef = useRef<HTMLDivElement>(null);
-    const chapter = getChapterFromParam(searchParams?.get("chapter") ?? undefined);
+    const chapter = getChapterFromParam(searchParams?.get("chapter") ?? ChapterCards[0].chapter);
+    const chapterInParams = getChapterFromParam(searchParams?.get("chapter") ?? undefined);
     const services: ServiceType[] = chapter ? ServiceData[chapter] ?? [] : [];
 
     useEffect(() => {
-        if (chapter && servicesGridRef.current) {
+        if (chapterInParams && chapter && servicesGridRef.current) {
             // Small delay to ensure DOM is ready
             setTimeout(() => {
                 servicesGridRef.current?.scrollIntoView({
