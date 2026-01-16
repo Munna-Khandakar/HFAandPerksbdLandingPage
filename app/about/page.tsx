@@ -1,6 +1,6 @@
 'use client'
 
-import {Teams} from "@/components/Teams";
+import {DirectorNote} from "@/components/DirectorNote";
 import CompanyBackground from "@/components/CompanyBackground";
 import {PageHero} from "@/components/layout/PageHero";
 import {PageSection} from "@/components/layout/PageSection";
@@ -17,7 +17,7 @@ const page = () => {
             <CompanyBackground/>
 
             <PageSection background="muted">
-                <Teams/>
+                <DirectorNote/>
             </PageSection>
         </>
     )
