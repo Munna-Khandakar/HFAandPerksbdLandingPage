@@ -97,9 +97,9 @@ const HeroSection = () => {
                 effect="fade"
                 fadeEffect={{crossFade: true}}
                 autoplay={{
-                    delay: 5000,
+                    delay: 3000,
                     disableOnInteraction: false,
-                    pauseOnMouseEnter: true
+                    pauseOnMouseEnter: false
                 }}
                 speed={1200}
                 loop={true}

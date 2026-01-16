@@ -79,12 +79,16 @@ Contact form emails are sent via API route at `app/api/send-email/route.ts`:
 - Requires environment variables: `EMAIL_SERVICE`, `EMAIL_USER`, `EMAIL_PASS`, `EMAIL_RECIPIENT`
 - Configured in `.env` file (not committed to git)
 
-### Animation Libraries
+### Animation & Visual Effects
 
-- **framer-motion**: For page transitions and animations
+- **framer-motion**: For page transitions and staggered animations (overlay content in HeroSection)
 - **tailwindcss-animate**: Tailwind plugin for CSS animations
-- **swiper**: For carousel/slider components (CatalogSwiperSection)
+- **swiper**: For carousel/slider components with custom effects:
+  - HeroSection uses fade effect with 1.2s transitions and 5s autoplay delay
+  - Ken Burns effect (scale 1 → 1.05) creates subtle zoom on hero images
+  - Custom pagination styling defined in `app/globals.css`
 - **react-countup**: For animated number counters
+- **sharp**: Image optimization for Next.js Image component
 
 ### UI Dependencies
 
@@ -103,12 +107,25 @@ TypeScript is used throughout with strict mode enabled. Key types:
 - `ChapterCard`: Metadata for chapter cards
 - `Chapter`: Enum for valid chapter values
 
+### Form Validation
+
+Forms use **react-hook-form** with **zod** for schema validation:
+- Contact form in ContactSection validates email, name, subject, and message
+- Type-safe validation with TypeScript integration via `@hookform/resolvers`
+
 ### Data Flow for Chapter Services
 
 1. URL contains chapter query param (e.g., `?chapter=japan`)
 2. `getChapterFromParam()` validates and converts to Chapter enum
 3. Home page passes chapter to `CatalogueSection`
 4. `CatalogueSection` looks up services from `ServiceData[chapter]`
+
+### Loading States
+
+Home page (`app/page.tsx`) uses React Suspense pattern:
+- Wraps `HomeContent` component to handle async operations
+- Provides skeleton loading state while `useSearchParams()` resolves
+- Ensures smooth UX when navigating with query parameters
 
 ### Environment Variables
 
