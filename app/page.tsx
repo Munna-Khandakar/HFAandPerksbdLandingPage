@@ -9,14 +9,16 @@ import CompanySection from "@/components/CompanySection";
 import ContactSection from "@/components/ContactSection";
 import HeroSection from "@/components/HeroSection";
 import {getChapterFromParam} from "@/lib/chapter";
+import {ChapterCards} from "@/data/ServiceData";
 
 function HomeContent() {
   const searchParams = useSearchParams();
   const catalogueSectionRef = useRef<HTMLDivElement>(null);
-  const chapter = getChapterFromParam(searchParams?.get("chapter") ?? undefined);
+  const chapterFromParams = getChapterFromParam(searchParams?.get("chapter") ?? undefined);
+  const chapter = getChapterFromParam(searchParams?.get("chapter") ?? ChapterCards[0].chapter);
 
   useEffect(() => {
-    if (chapter && catalogueSectionRef.current) {
+    if (chapterFromParams && chapter && catalogueSectionRef.current) {
       // Small delay to ensure DOM is ready
       setTimeout(() => {
         catalogueSectionRef.current?.scrollIntoView({

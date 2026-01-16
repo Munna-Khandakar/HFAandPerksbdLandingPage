@@ -17,7 +17,7 @@ const ChapterSelector = ({className}: ChapterSelectorProps) => {
     const searchParams = useSearchParams();
     const pathname = usePathname();
 
-    const activeChapter = (searchParams?.get("chapter") as Chapter | null) ?? null;
+    const activeChapter = (searchParams?.get("chapter") as Chapter | null) ?? ChapterCards[0].chapter;
 
     const pushRoute = (nextChapter: Chapter | null) => {
         const params = new URLSearchParams(searchParams?.toString());
