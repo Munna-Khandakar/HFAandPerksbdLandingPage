@@ -84,17 +84,8 @@ export default function CatalogSwiperSection() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <Image
-                        src="/image/1.jpg"
+                        src="/image/11.jpg"
                         alt="Perks Group international operations"
-                        width={520}
-                        height={320}
-                        className="w-full h-[320px] object-cover rounded-xl"
-                    />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Image
-                        src="/image/2.jpg"
-                        alt="Global trading excellence"
                         width={520}
                         height={320}
                         className="w-full h-[320px] object-cover rounded-xl"
@@ -112,7 +103,7 @@ export default function CatalogSwiperSection() {
 
                 <SwiperSlide>
                     <Image
-                        src="/image/3.jpg"
+                        src="/image/10.jpg"
                         alt="Import export services showcase"
                         width={520}
                         height={320}
