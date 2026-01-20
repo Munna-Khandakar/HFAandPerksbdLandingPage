@@ -126,7 +126,7 @@ export const ServiceData: Record<Chapter, ServiceType[]> = {
             id: 2,
             name: "Traditional Desi Dresses",
             description: "Exporting traditional Pakistani desi female dresses, including elegant shalwar kameez, lehengas, and embroidered garments crafted with premium fabrics.",
-            image: "/image/slider/cloth.webp",
+            image: "/image/slider/cloth.jpeg",
         }
     ],
     [Chapter.America]: [

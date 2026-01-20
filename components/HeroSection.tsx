@@ -28,7 +28,7 @@ const heroSlides = [
         subtext: 'We provide qualified professionals and workforce solutions across industries, bridging talent gaps in global markets'
     },
     {
-        image: '/image/slider/cloth.webp',
+        image: '/image/slider/cloth.jpeg',
         tag: 'Textile Excellence',
         headline: 'Premium Fabrics & Garments',
         subtext: 'We supply finest quality textiles and ready-made garments from Pakistan and Bangladesh, connecting global markets with elegance'
@@ -60,7 +60,7 @@ const heroSlides = [
     {
         image: '/image/slider/scrap.jpg',
         tag: 'Recycling Solutions',
-        headline: 'Metal Scrap & Recycling Services',
+        headline: 'Metal Scrap Export Service',
         subtext: 'We offer comprehensive scrap metal trading and recycling solutions, promoting sustainability in global supply chains'
     }
 ];
@@ -171,7 +171,7 @@ const HeroSection = () => {
                                         </Link>
                                     </Button>
                                     <Button variant="outline" size="lg" asChild
-                                            className="border-white text-white hover:bg-white hover:text-neutral-900">
+                                            className="border-white  hover:bg-white hover:text-neutral-900">
                                         <Link href="/about">
                                             Learn More
                                         </Link>

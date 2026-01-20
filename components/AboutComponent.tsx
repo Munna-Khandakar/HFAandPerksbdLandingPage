@@ -9,7 +9,7 @@ import ChapterSelector from "@/components/ChapterSelector";
 const SLIDER_IMAGES = [
     '/image/slider/cars.avif',
     '/image/slider/manpower.jpeg',
-    '/image/slider/cloth.webp',
+    '/image/slider/cloth.jpeg',
     '/image/slider/soyabin.jpg',
     '/image/slider/coffee.jpg',
     '/image/slider/dates.jpg',
