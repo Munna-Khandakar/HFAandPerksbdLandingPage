@@ -1,53 +1,43 @@
 import {motion} from "framer-motion";
 import {titleVariants} from '@/utils/animation';
 import Image from "next/image";
-import {Quote} from "lucide-react";
 
 const DIRECTOR = {
-    name: "Major Md Arshad Hossain",
-    credentials: "psc, Infantry (Retired)",
+    name: "Major (Retd) Md Arshad Hossain, psc inf",
     rank: "Managing Director",
     image: "/image/team/arshad.jpeg",
-    message: `At Perks Group, our mission is simple: to find the right products for our customers and deliver them from anywhere in the world. We take pride in working with honesty, integrity, and dedication, ensuring every client receives the best solution for their needs. Guided by our tagline, "We walk, we sail, we fly to bring you the best," we go wherever it takes to make our customers' goals a reality.`
 }
 
 export const DirectorNote = () => {
     return (
         <div className='container'>
-            <div className='py-12 lg:py-20'>
+            <div className='py-12 lg:py-16'>
                 {/* Section Title */}
                 <motion.div
                     initial="offscreen"
                     whileInView={"onscreen"}
                     variants={titleVariants}
                     viewport={{once: true}}
-                    className='mb-12 text-center'
+                    className='mb-10 text-center'
                 >
-                    <h1 className='text-4xl md:text-5xl font-bold tracking-tight bg-gradient-to-r from-primary-600 to-primary-800 dark:from-primary-400 dark:to-primary-600 bg-clip-text text-transparent'>
+                    <h1 className='text-2xl md:text-3xl font-bold text-neutral-900 dark:text-white'>
                         Director&apos;s Note
                     </h1>
-                    <div className='w-24 h-1 bg-gradient-to-r from-secondary-500 to-secondary-600 mx-auto mt-4 rounded-full' />
+                    <div className='w-16 h-0.5 bg-neutral-900 dark:bg-white mx-auto mt-2' />
                 </motion.div>
 
-                {/* Modern Card with Side-by-Side Layout */}
+                {/* Simple Side-by-Side Layout */}
                 <motion.div
-                    initial={{opacity: 0, y: 30}}
+                    initial={{opacity: 0, y: 20}}
                     whileInView={{opacity: 1, y: 0}}
-                    transition={{duration: 0.6, ease: "easeOut"}}
+                    transition={{duration: 0.5, ease: "easeOut"}}
                     viewport={{once: true}}
-                    className='max-w-6xl mx-auto'
+                    className='max-w-4xl mx-auto'
                 >
-                    <div className='relative overflow-hidden rounded-2xl bg-gradient-to-br from-white to-neutral-50 dark:from-neutral-800 dark:to-neutral-900 shadow-xl hover:shadow-2xl transition-shadow duration-300'>
-                        {/* Decorative Background Pattern */}
-                        <div className='absolute inset-0 opacity-5'>
-                            <div className='absolute top-0 left-0 w-72 h-72 bg-primary-500 rounded-full blur-3xl' />
-                            <div className='absolute bottom-0 right-0 w-96 h-96 bg-secondary-500 rounded-full blur-3xl' />
-                        </div>
-
-                        <div className='relative grid lg:grid-cols-5 gap-0'>
-                            {/* Left Side - Image */}
-                            <div className='lg:col-span-2 relative h-64 lg:h-auto'>
-                                <div className='absolute inset-0 bg-gradient-to-br from-primary-600/20 to-secondary-600/20 z-10' />
+                    <div className='flex flex-col md:flex-row gap-6 md:gap-8 items-start'>
+                        {/* Left Side - Circular Image */}
+                        <div className='flex-shrink-0'>
+                            <div className='relative w-32 h-32 md:w-40 md:h-40 rounded-lg overflow-hidden'>
                                 <Image
                                     src={DIRECTOR.image}
                                     alt={DIRECTOR.name}
@@ -55,38 +45,24 @@ export const DirectorNote = () => {
                                     className='object-fit object-center'
                                     priority
                                 />
-                                {/* Decorative Border */}
-                                <div className='absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-500 via-secondary-500 to-primary-500 z-20' />
                             </div>
+                        </div>
 
-                            {/* Right Side - Content */}
-                            <div className='lg:col-span-3 p-8 md:p-12 flex flex-col justify-center'>
-                                {/* Quote Icon */}
-                                <div className='mb-6'>
-                                    <div className='w-12 h-12 rounded-full bg-gradient-to-br from-primary-500 to-primary-600 flex items-center justify-center shadow-lg'>
-                                        <Quote className='w-6 h-6 text-white' />
-                                    </div>
-                                </div>
+                        {/* Right Side - Content */}
+                        <div className='flex-1'>
+                            {/* Message */}
+                            <p className='text-base md:text-lg leading-relaxed text-neutral-600 dark:text-neutral-400 italic mb-4'>
+                                At Perks Group, our mission is simple: to find the right products for our customers and deliver them from anywhere in the world. We take pride in working with honesty, integrity, and dedication, ensuring every client receives the best solution for their needs. Guided by our tagline, <span className='font-bold'>&quot;We walk, we sail, we fly to bring you the best,&quot;</span> we go wherever it takes to make our customers&apos; goals a reality.
+                            </p>
 
-                                {/* Message */}
-                                <blockquote className='mb-8'>
-                                    <p className='text-lg md:text-xl leading-relaxed text-neutral-700 dark:text-neutral-300 font-light italic'>
-                                        {DIRECTOR.message}
-                                    </p>
-                                </blockquote>
-
-                                {/* Director Info */}
-                                <div className='border-l-4 border-primary-500 pl-6'>
-                                    <h3 className='text-2xl md:text-3xl font-bold text-neutral-900 dark:text-white mb-1'>
-                                        {DIRECTOR.name}
-                                    </h3>
-                                    <p className='text-sm text-neutral-600 dark:text-neutral-400 mb-2'>
-                                        {DIRECTOR.credentials}
-                                    </p>
-                                    <p className='text-base font-semibold text-primary-600 dark:text-primary-400 uppercase tracking-wide'>
-                                        {DIRECTOR.rank}
-                                    </p>
-                                </div>
+                            {/* Director Info */}
+                            <div>
+                                <h3 className='text-lg md:text-xl font-bold text-neutral-900 dark:text-white'>
+                                    {DIRECTOR.name}
+                                </h3>
+                                <p className='text-primary-600 dark:text-primary-400'>
+                                    {DIRECTOR.rank}
+                                </p>
                             </div>
                         </div>
                     </div>
