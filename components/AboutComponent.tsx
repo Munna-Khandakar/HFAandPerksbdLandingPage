@@ -15,6 +15,7 @@ const SLIDER_IMAGES = [
     '/image/slider/dates.jpg',
     '/image/slider/nuts.avif',
     '/image/slider/scrap.jpg',
+    '/image/slider/sports.jpeg',
 ];
 
 const slideVariants = {

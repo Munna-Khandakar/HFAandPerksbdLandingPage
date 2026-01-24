@@ -12,7 +12,7 @@ const InternationalPartners = () => {
             phone: "+1 718 496 8266",
         },
         {
-            name: "My Plate xyz INC",
+            name: "Perks America",
             address1: "1401 Satellite View",
             address2: "Round Rok, Tx - 78665",
             phone: "Phone : +1 929 471 8424",

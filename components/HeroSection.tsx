@@ -62,6 +62,12 @@ const heroSlides = [
         tag: 'Recycling Solutions',
         headline: 'Metal Scrap Export Service',
         subtext: 'We offer comprehensive scrap metal trading and recycling solutions, promoting sustainability in global supply chains'
+    },
+    {
+        image: '/image/slider/sports.jpeg',
+        tag: 'Sports & Recreation',
+        headline: 'Premium Sports Equipment & Gear',
+        subtext: 'We supply high-quality sports equipment, apparel, and accessories from trusted global manufacturers, supporting performance and active lifestyles'
     }
 ];
 
