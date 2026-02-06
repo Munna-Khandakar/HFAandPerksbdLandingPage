@@ -1,6 +1,7 @@
 "use client";
 
 import React, {useState} from "react";
+import emailjs from "@emailjs/browser";
 import {PageHero} from "@/components/layout/PageHero";
 import {PageSection} from "@/components/layout/PageSection";
 import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
@@ -47,28 +48,28 @@ const ContactSection: React.FC = () => {
         setStatus({type: "", message: ""});
 
         try {
-            console.log("Submitting form data:", formValues);
+            const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+            const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+            const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
-            const response = await fetch("/api/send-email", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(formValues),
-            });
-
-            const data = await response.json();
-            console.log("API Response:", data);
-
-            if (response.ok) {
-                setStatus({
-                    type: "success",
-                    message: "Message sent successfully!",
-                });
-                setFormValues({name: "", email: "", message: ""});
-            } else {
-                throw new Error(data.error || data.message || "Failed to send message");
+            if (!serviceId || !templateId || !publicKey) {
+                throw new Error("Email service is not configured.");
             }
+
+            const templateParams = {
+                name: formValues.name,
+                email: formValues.email,
+                message: formValues.message,
+            };
+
+            console.log("Sending email with EmailJS:", templateParams);
+            await emailjs.send(serviceId, templateId, templateParams, {publicKey});
+
+            setStatus({
+                type: "success",
+                message: "Message sent successfully!",
+            });
+            setFormValues({name: "", email: "", message: ""});
         } catch (error: any) {
             console.error("Form submission error:", error);
             setStatus({
